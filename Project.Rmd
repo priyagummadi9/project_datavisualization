@@ -1,0 +1,20 @@
+---
+title: "Final Project"
+author: "Priya Gummadidala"
+project partner: "Nikhil Chandragiri"
+date: "3/31/2019"
+output: html_document
+
+# we feel number of deaths incresing drastically every year, we wanted to know the causes of death moreover this data satisfies all the requirements.
+# you can expect me to answer how i scraped the data , how i use data frames and GGplots to create graphs.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#Source :https://catalog.data.gov/dataset/age-adjusted-death-rates-for-the-top-10-leading-causes-of-death-united-states-2013
+health <- read.csv("Nchs.csv",TRUE,",")
+health
+```
